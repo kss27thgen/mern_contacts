@@ -448,6 +448,25 @@ table th {
   margin-right: 0.6rem;
 }
 
+/* Animation */
+.item-enter {
+  opacity: 0;
+}
+
+.item-enter-active {
+  opacity: 1;
+  transition: opacity .5 ease-in;
+}
+
+.item-exit {
+  opacity: 1;
+}
+
+.item-exit-active {
+  opacity: 0;
+  transition: opacity .5s ease-in;
+}
+
 /* Mobile Styles */
 @media (max-width: 700px) {
   .hide-sm {
@@ -482,5 +501,5 @@ table th {
   .navbar ul {
     text-align: center;
     justify-content: center;
- }
- }
+  }
+}
